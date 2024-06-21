@@ -35,8 +35,12 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`mx-auto w-screen bg-blue-500 px-20 py-4 flex items-center text-white fixed transition ease-in duration-150 ${
-				route === '/' ? (isScrolled ? '' : 'bg-transparent') : ''
+			className={`mx-auto w-screen  px-20 py-4 flex items-center text-white fixed transition ease-in duration-150 ${
+				route === '/'
+					? isScrolled
+						? 'bg-vega-blue'
+						: 'bg-transparent'
+					: ''
 			}`}
 		>
 			<div className='navbar-brand z-20'>
